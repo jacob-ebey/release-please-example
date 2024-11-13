@@ -2,5 +2,6 @@
   "private": true,
   "scripts": {
     "build": "pnpm run -r build"
-  }
+  },
+  "version": "1.0.0"
 }
