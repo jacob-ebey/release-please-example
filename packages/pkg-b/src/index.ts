@@ -1,1 +1,1 @@
-export default "Hello from pkg-a";
+export default "Hello from pkg-b";
