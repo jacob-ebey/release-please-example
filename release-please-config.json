@@ -1,4 +1,6 @@
 {
+  "prerelease": true,
+  "versioning": "prerelease",
   "packages": {
     "packages/pkg-a": {},
     "packages/pkg-b": {}
