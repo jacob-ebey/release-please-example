@@ -16,7 +16,7 @@ jobs:
       # create release PR
       pull-requests: write
     outputs:
-      release_created: ${{ steps.release.outputs.release_created }}
+      releases_created: ${{ steps.release.outputs.releases_created }}
     steps:
       - name: 🆕 Create or update release
         uses: googleapis/release-please-action@v4
@@ -27,6 +27,6 @@ jobs:
     needs: [release-please]
     runs-on: ubuntu-latest
     # Only run if a release was created
-    if: ${{ needs.release-please.outputs.release_created }}
+    if: ${{ needs.release-please.outputs.releases_created }}
     steps:
       - run: echo "Publishing to npm"
